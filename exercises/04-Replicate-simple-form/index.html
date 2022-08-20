@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			table,
+			th,
+			td {
+				border: 1px solid grey;
+				width: 50%;
+			}
+			.center {
+				margin: auto;
+			}
+			tfoot {
+				text-align: center;
+			}
+			textarea {
+				resize: none;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<!-- your code here -->
+			<table style="width: 360px" border="1px solid black;">
+				<tr>
+					<th><strong>Name</strong></th>
+					<th><strong>value</strong></th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type=" text" /></td>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" id="javascript" name="fav_language" value="JavaScript" /> <label for="javascript">Male </label><br />
+						<input type="radio" id="javascript" name="fav_language" value="JavaScript" /> <label for="javascript">Female</label><br />
+					</td>
+				</tr>
+				<tr>
+					<td>Eye Color</td>
+					<td>
+						<label for="eye color">Choose a color:</label>
+						<select name="Eyes" id="Eyes">
+							<option value="Blue">Blue</option>
+							<option value="Black">Black</option>
+							<option value="Green">Green</option>
+							<option value="Brown">Brown</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" />
+						<label for="vehicle1"> Over 6 feet tall</label><br />
+						<input type="checkbox" />
+						<label for="vehicle2"> Over 200 pounds</label><br />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">Describe your athletic ability</td>
+				</tr>
+				<tr>
+					<td colspan="2"><textarea name="description" id="description" cols="45" rows="6"></textarea></td>
+				</tr>
+				<tfoot>
+					<td colspan="2"><button>Enter my information</button></td>
+				</tfoot>
+			</table>
+		</form>
+	</body>
 </html>
